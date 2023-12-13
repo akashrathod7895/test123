@@ -5,7 +5,7 @@ pipeline {
                 steps {
                     sh "yum install httpd -y"
                     sh "service httpd start"
-                    sh "chkconfing httpd on"
+                    sh "chkconfig httpd on"
                     sh "cd /var/www/html"
                     sh "cp /root/.jenkins/workspace/project/index.html ."
                     sh "cd /"
